@@ -1,0 +1,29 @@
+{
+  "name": "mm-client-browser",
+  "version": "1.0.0",
+  "description": "Matter in motion browser client",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/matter-in-motion/mm-client-nodejs.git"
+  },
+  "keywords": [
+    "mm",
+    "mmp",
+    "matter",
+    "motion",
+    "client"
+  ],
+  "author": "Alexey Novikov <v@2dubs.com> (http://2dubs.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/matter-in-motion/mm-client-nodejs/issues"
+  },
+  "homepage": "https://github.com/matter-in-motion/mm-client-nodejs#readme",
+  "dependencies": {
+    "uc-compose": "^1.0.0",
+    "uc-log": "^1.0.0",
+    "uc-request": "^1.0.0"
+  },
+  "devDependencies": {}
+}
