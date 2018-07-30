@@ -1,4 +1,3 @@
-/*eslint-disable strict */
 import Request from 'uc-request';
 
 const Http = function(settings) {
@@ -15,7 +14,6 @@ Http.prototype = {
   },
 
   send: function(req, cb) {
-    console.log(req.url || this.api);
     const r = {
       headers: {
         'MM': JSON.stringify({ call: req.call })
