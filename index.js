@@ -34,13 +34,14 @@ MM.prototype = compose(
       return this;
     },
 
-    setAuth: function(controller) {
-      this.auth = controller;
+    setAuth: function(AuthClass) {
+      this.auth = new AuthClass();
       return this;
     },
 
-    app: function(app) {
-      this._app = app;
+    setApp: function(app) {
+      this.app = app;
+      return this;
     },
 
     init: function(cb) {
