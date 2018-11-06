@@ -130,7 +130,6 @@ MM.prototype = compose(
 
       //use only http for files upload
       const transport = opts.files || opts.url ? this.transports.http : this.transport;
-      this.log(LOG_LEVEL.INFO, `${transport.name} call`, call, body);
 
       const hooks = this.hooks[call];
       if (hooks && hooks.will) {
@@ -141,6 +140,7 @@ MM.prototype = compose(
         }
       }
 
+      this.log(LOG_LEVEL.INFO, `${transport.name} call`, call, body);
       return transport.send({
         url: opts.url,
         call: call,
