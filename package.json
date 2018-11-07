@@ -1,6 +1,6 @@
 {
   "name": "mm-client-browser",
-  "version": "1.0.2",
+  "version": "1.1.0",
   "description": "Matter in motion browser client",
   "main": "index.js",
   "repository": {
