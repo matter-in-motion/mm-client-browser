@@ -85,6 +85,14 @@ MM.prototype = compose(
       return this.auth ? this.auth.meta() : undefined;
     },
 
+    isAuthenticated: function(...args) {
+      if (!this.auth || !this.auth.isAuthenticated) {
+        return null;
+      }
+
+      return this.auth.isAuthenticated(...args);
+    },
+
     // throttles all calls
     call: function(call, body, opts, cb) {
       if (typeof opts === 'function') {

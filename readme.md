@@ -54,6 +54,10 @@ Sets default transport.
 
 Sets the authentication controller.
 
+#### isAuthenticated()
+
+Returns `null` if no authentication controller defined. Othewise calls the `this.auth.isAuthenticated` method and returns the result.
+
 #### init(callback)
 
 Inits all the transports. Initis the authentication controller if present. Calls callback.
